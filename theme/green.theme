@@ -1,0 +1,518 @@
+theme {
+  /* First, create a name for your theme, and define a package to place it in */
+  name = "Green"
+  basePackage = "ru.formatq.gwtapp.theme"
+
+  /* Next, configure these basic defaults, to be used throughout the file */
+  text = util.fontStyle("Tahoma, Arial, Verdana, sans-serif", "13px", "#000000", "normal")
+  headerText = util.extend(text, {
+    size = "15px"
+    color = "#eeffff"
+    weight = "bold"
+  })
+
+  borderRadius = 6
+
+  bgColor = "#ffffff"
+  headerBgColor = "#2299cc"
+
+  iconColor = "#ddeeff"
+
+  spacing = 10
+
+  /* Here we expand on those initial values to prepare them for the main theme */
+  borderColor = headerBgColor
+
+  headerGradientDetails {
+    stops = [
+        util.lightenColor(headerBgColor, 0.1) + " 0%",
+        util.darkenColor(headerBgColor, 0.1) + " 50%",
+        util.darkenColor(headerBgColor, 0.2) + " 51%",
+        headerBgColor + " 100%"
+    ]
+  }
+
+  /* Finally, the theme itself, with a few presets, along with the values used above */
+  details {
+    borderColor=theme.borderColor
+    backgroundColor=bgColor
+    disabledOpacity = 0.6
+    disabledTextColor = ''
+    borderLayout {
+      panelBackgroundColor=bgColor
+      collapsePanelBorder = util.border('solid', theme.borderColor, 1)
+    }
+    splitbar {
+      dragColor = "#B4B4B4"
+      handleOpacity = 0.5
+      handleWidth = 8
+      handleHeight = 48
+    }
+    info {
+      backgroundColor="#000000"
+      borderRadius=theme.borderRadius
+      border=util.border('none')
+      opacity=0.8
+      margin=util.margin(4,0,0,0)
+      padding=util.padding(0)
+      headerPadding=util.padding(theme.spacing)
+      headerText=util.extend(theme.headerText, {
+        color = "#ffffff"
+      })
+      messagePadding=util.padding(0, theme.spacing, theme.spacing, theme.spacing)
+      messageText=util.fontStyle(text.family,text.size,'#ffffff',text.weight)
+      radiusMinusBorderWidth = util.radiusMinusBorderWidth(border, borderRadius)
+    }
+
+    button {
+      arrowColor = theme.iconColor
+      borderRadius = 4
+      border = util.border('solid', '#126DAF', 1)
+      radiusMinusBorderWidth = util.radiusMinusBorderWidth(border, borderRadius)
+
+      gradient = '#4B9C28 0%, #38922C 50%, #358A37 51%, #38922C'
+      overGradient = '#479237, #33863D 50%, #307F47 51%, #33863D'
+      pressedGradient = '#2A6D61, #276769 50%, #2A6D61 51%, #3F7B58'
+
+      font = theme.headerText
+
+      padding = util.padding(3);
+      smallFontSize = 12
+      smallLineHeight = 18
+      mediumFontSize = 14
+      mediumLineHeight = 24
+      largeFontSize = 16
+      largeLineHeight = 32
+    }
+    buttonGroup {
+      borderRadius = theme.borderRadius
+      border = util.border('solid', theme.borderColor, 3)
+      headerGradient = util.gradientString(headerGradientDetails)
+
+      font = theme.headerText
+      headerPadding = util.padding(2);
+
+      bodyPadding = util.padding(4);
+      bodyBackgroundColor = '#FFFFFF'
+    }
+
+    field {
+      borderColor = "#c0c0c0"
+      borderWidth = 1
+      borderStyle = "solid"
+
+      backgroundColor = "#ffffff"
+
+      focusBorderColor = "#3892d3"
+
+      invalidBackgroundColor = "#ffffff"
+      invalidBorderColor = '#D94E37'
+      invalidBorderWidth = 1
+
+
+      padding = util.padding(2, 6, 1, 6)
+
+      height = 24
+
+      lineHeight = "18px"
+
+      text = theme.text
+
+      emptyTextColor = "#808080"
+
+      slider {
+        trackHeight = 8
+        trackBorder = util.border('solid', "#d4d4d4", 1)
+        trackBackgroundColor = "#f5f5f5"
+        trackRadius = 4
+
+        thumbWidth = 15
+        thumbHeight = thumbWidth
+        thumbRadius = 8
+        thumbBorder = util.border("solid", "#777777", 1)
+        thumbBackgroundColor = "#f5f5f5"
+      }
+
+      sideLabel {
+        text = field.text
+        textAlign = 'left'
+        padding = util.padding(0, 0, 3)
+        labelPadding = util.padding(5, 5, 0, 0)
+        fieldPadding = util.padding(0)
+      }
+      topLabel {
+        text = field.text
+        textAlign = 'left'
+        padding = util.padding(0, 0, 5)
+        labelPadding = util.padding(6, 0, 0)
+        fieldPadding = util.padding(0)
+      }
+    }
+    datePicker {
+      border = util.border("solid", "#e1e1e1", 1)
+      backgroundColor = '#ffffff'
+
+      headerPadding = util.padding(8, 6)
+      headerBackgroundColor = "#f5f5f5"
+      headerText = theme.headerText
+      headerTextPadding = util.padding(0, 5)
+
+      dayOfWeekBackgroundColor = '#ffffff'
+      dayOfWeekText = util.extend(theme.text,{
+        weight = 'bold'
+      })
+      dayOfWeekLineHeight = '24px'
+      dayOfWeekPadding = util.padding(0, 9, 0, 0)
+
+      dayBorder = util.border('solid', '#ffffff', 1)
+      dayText = theme.text
+      dayLineHeight = '23px'
+      dayPadding = util.padding(0, 3, 0, 0)
+
+      dayDisabledBackgroundColor = '#eeeeee'
+      dayDisabledText = util.extend(dayText, {
+        color = '#808080'
+      })
+
+      dayNextBackgroundColor = '#ffffff'
+      dayNextText = util.extend(dayText, {
+        color = '#bfbfbf'
+      })
+
+      dayPreviousBackgroundColor = '#ffffff'
+      dayPreviousText = dayNextText
+
+      itemOverColor = "#000000"
+      itemOverBackgroundColor = "#eaf3fa"
+
+      itemSelectedBorder = util.border('solid', '#3892d3', 1)
+      itemSelectedBackgroundColor = '#d6e8f6'
+      itemSelectedText = util.extend(dayText, {
+        weight = 'bold'
+      })
+
+      todayBorder = util.border('solid', '#8b0000', 1)
+
+      footerPadding = util.padding(3, 0)
+      footerBackgroundColor = '#f5f5f5'
+
+      buttonMargin = util.margin(0, 3, 0, 2)
+
+      width = "212px"
+    }
+    panel {
+      backgroundColor=bgColor
+      border = util.border('solid', theme.borderColor, 1)
+      font = theme.text
+      headerBackgroundColor=util.lastStopColor(headerGradientDetails)
+      headerGradient=util.gradientString(headerGradientDetails)
+      padding=util.padding(2)
+      headerPadding = util.padding(4)
+
+    }
+    framedPanel = util.extend(panel, {
+      borderRadius=theme.borderRadius
+      headerPadding = util.padding(util.abs(panel.headerPadding.top - borderRadius), panel.headerPadding.right, panel.headerPadding.bottom)
+      radiusMinusBorderWidth = util.radiusMinusBorderWidth(border, borderRadius)
+    })
+
+    tabs {
+      borderColor=theme.borderColor
+      borderRadius=theme.borderRadius
+      gradient=util.gradientString(headerGradientDetails)
+      hoverGradient=util.gradientString(headerGradientDetails)
+      iconLeftOffset=6
+      iconTopOffset=5
+      inactiveGradient=util.gradientString(util.darkenGradient(headerGradientDetails, 0.3))
+      lastStopColor=util.lastStopColor(headerGradientDetails)
+      inactiveLastStopColor=util.lastStopColor(util.darkenGradient(headerGradientDetails, 0.3))
+      iconWidth = 16
+      closeIconWidth = 11
+      padding = util.padding(spacing)
+      tabStripPadding = util.padding(1)
+      paddingWithIcon = util.padding(padding.left + iconWidth/2)
+      paddingWithClosable = util.padding(padding.right + closeIconWidth - 2)
+
+      scrollerBackgroundColor=lastStopColor
+      scrollerWidth=18
+      tabHeight=25
+      tabSpacing=spacing/2
+      tabStripGradient= util.solidGradientString(util.darkenColor(headerBgColor, 0.3))
+
+
+      headingText = theme.text
+      activeHeadingText = theme.text
+      hoverHeadingText = theme.text
+
+      tabItemBorderLeft = "1px solid " + borderColor
+      tabItemBorderTop = "1px solid " + borderColor
+      tabItemBorderRight = "1px solid " + borderColor
+      tabBodyBorder = "1px solid " + borderColor
+      tabBarBorder = "none"
+
+      tabBarBottomHeight = 2
+      tabStripBottomBorder = "1px solid " + borderColor
+
+      tabTextPadding = util.padding(7, 0)
+
+      bodyBackgroundColor = "#ffffff"
+    }
+    toolbar {
+      border = util.border('none')
+      gradient=util.gradientString(headerGradientDetails)
+      padding = util.padding(spacing / 2)
+
+      buttonOverride = theme.details.button
+
+      labelItem {
+        text = field.text
+        lineHeight = '17px'
+        padding = util.padding(2, 2, 0)
+      }
+    }
+    status {
+      text = theme.text
+      lineHeight = '16px'
+      padding = util.padding(0, 5)
+      border = util.border('solid', '#cccccc #d9d9d9 #d9d9d9', 1)
+    }
+    tools {
+      primaryColor = iconColor
+      primaryOverColor = headerBgColor
+      primaryClickColor = util.lightenColor(headerBgColor, 0.2)
+      warningColor = '#ff0000'
+      allowColor = '#00ff00'
+    }
+    tip {
+      backgroundColor = "#ffffff"
+      borderRadius = theme.borderRadius
+      opacity = 1
+      border = util.border('solid', '#cccccc', 1)
+      radiusMinusBorderWidth = util.radiusMinusBorderWidth(border, borderRadius)
+      headerPadding = util.padding(0)
+      headerText = theme.text;
+      messagePadding = util.padding(0)
+      messageText = theme.text;
+      margin = util.margin(0)
+      padding = util.padding(2)
+    }
+    errortip = util.extend(tip, {
+      border = util.border('solid', '#dd2222', 1)
+    })
+    fieldset {
+      border=util.border('solid', '#bbbbbb', 1)
+      text=theme.text
+    }
+    window = util.extend(framedPanel, {
+      backgroundColor = headerBgColor
+      border = util.border('solid', util.darkenColor(headerBgColor, 0.2), 1)
+    })
+    messagebox {
+      text = theme.text
+      messagePadding = util.padding(spacing, spacing, spacing / 2)
+      bodyPadding = util.padding(spacing / 2, spacing, spacing)
+      iconPadding = util.padding(spacing)
+    }
+    grid {
+      columnHeader{
+        borderWidth = 0
+        borderColor = '#c0c0c0'
+        borderStyle = 'solid'
+        gradient = util.gradientString(util.lightenGradient(headerGradientDetails, 0.4))
+        overGradient = util.gradientString(util.lightenGradient(headerGradientDetails, 0.2))
+
+        text = theme.headerText
+        padding = util.padding(spacing, spacing)
+        lineHeight = "normal"
+
+        menuButtonWidth=18
+        menuGradient = util.solidGradientString(util.lightenColor(headerBgColor, 0.2))
+        menuBorder=util.border('solid', '#222222', 0)
+        menuHoverGradient = util.solidGradientString(headerBgColor)
+        menuHoverBorder=util.border('solid', '#222222', 0)
+        menuActiveGradient = util.solidGradientString(headerBgColor)
+        menuActiveBorder=util.border('solid', '#222222', 0)
+      }
+
+      cellPadding = util.padding(5,10,4)
+      cellText = theme.text
+      cellLineHeight = "normal"
+      cellVBorderColor = '#ededed'
+      cellHBorderColor = '#ededed'
+      cellBorderWidth = 1
+      cellBackgroundColor = '#ffffff'
+      cellAltBackgroundColor = '#fafafa'
+
+      cellOverVBorderColor = '#ededed'
+      cellOverVBorderStyle = 'solid'
+      cellOverHBorderColor = '#e2eff8'
+      cellOverHBorderStyle = 'solid'
+
+      cellOverBackgroundColor = '#e2eff8'
+
+      cellSelectedVBorderColor = '#ededed'
+      cellSelectedVBorderStyle = 'solid'
+      cellSelectedHBorderColor = '#e2eff8'
+      cellSelectedHBorderStyle = 'solid'
+
+      cellSelectedBackgroundColor = '#c1ddf1'
+
+      specialColumnGradient = ""
+      specialColumnGradientSelected = ""
+
+      group {
+        backgroundColor = '#f5f5f5'
+        border = util.border('solid', columnHeader.borderColor, 0, 0, 1)
+        text = columnHeader.text
+        padding = util.padding(8, 4)
+        iconSpacing = 11 + 6 // icon is 11px wide, plus 6px padding
+        summary {
+          text = util.extend(columnHeader.text, {
+            color = '#000000'
+          })
+          backgroundColor = '#ffffff'
+        }
+      }
+
+      rowNumberer {
+        text = theme.text
+        padding = util.padding(5,3,4)
+      }
+
+      rowEditor {
+        backgroundColor = '#DFEAF2'
+        border = util.border('solid', '#e1e1e1', 1, 0);
+      }
+
+      footer {
+        text = util.extend(theme.text, {
+          weight = 'bold'
+        })
+        backgroundColor = '#ffffff'
+        cellBorder = util.border('solid', '#ededed', 1, 0, 0)
+      }
+    }
+    listview {
+      backgroundColor = bgColor
+      border = util.border("solid", theme.borderColor, 1)
+      text = theme.text
+      lineHeight = "normal"
+      item {
+        border = util.border("none")
+        gradient = util.solidGradientString("#ffffff")
+        padding = util.padding(0, 4)
+      }
+      overItem {
+        border = util.border("none")
+        gradient = util.gradientString(util.lightenGradient(headerGradientDetails, 0.2))
+        padding = util.padding(0, 4)
+      }
+      selectedItem {
+        border = util.border("none")
+        gradient = util.solidGradientString(util.lightenColor(headerBgColor, 0.1))
+        padding = util.padding(0, 4)
+      }
+    }
+    tree {
+      dragOverBackgroundColor = '#e2eff8'
+      dropBackgroundColor = '#e2eff8'
+      lineHeight = 'normal'
+      nodePadding = util.padding(0, 6, 0, 3)
+      overBackgroundColor = '#e2eff8'
+      selectedBackgroundColor = '#c1ddf1'
+      text = theme.text
+      iconMargin = util.margin(4, 3, 0, 2)
+      itemHeight = "25px"
+    }
+    accordionLayout = panel
+    menu {
+      border = util.border('solid', theme.borderColor, 1)
+      padding = util.padding(0)
+      gradient = util.solidGradientString('#ffffff')
+      lastGradientColor = '#ffffff'
+
+      itemText = theme.text
+      itemLineHeight = 'normal'
+      itemPadding = util.padding(0)
+
+      activeItemText = itemText
+      activeItemGradient = util.solidGradientString('#d6e8f6')
+      activeItemBorder = util.border('none')
+
+      bar {
+        border = util.border('none')
+        padding = util.padding(0)
+        gradient = menu.gradient
+
+
+        itemText = menu.itemText
+        itemLineHeight = menu.itemLineHeight
+        itemPadding = util.padding(1, 8)
+
+        hoverItemText = itemText
+        hoverItemGradient = menu.activeItemGradient
+        hoverItemBorder = util.border('none')
+
+        activeItemText = itemText
+        activeItemGradient = menu.activeItemGradient
+        activeItemBorder = util.border('none')
+      }
+
+      separator {
+        height = 1
+        margin = util.margin(2, 3)
+        color = '#e1e1e1'
+      }
+
+      header {
+        border = util.border('solid', theme.borderColor, 0, 0, 1)
+        backgroundColor = '#D6E3F2'
+
+        itemText = theme.text
+        itemLineHeight = 'normal'
+
+        itemPadding = util.padding(3)
+      }
+    }
+    mask {
+      backgroundColor = "#000000"
+      opacity = 0.5
+      box {
+        backgroundColor = "#dddddd"
+        borderColor = "#555555"
+        borderRadius = 0
+        borderStyle = "solid"
+        borderWidth = 2
+        loadingImagePosition = "0 center"
+        padding = util.padding(5)
+        radiusMinusBorderWidth = util.max(0, borderRadius - borderWidth)
+        text = theme.text
+        textPadding = util.padding(0, 0, 0, 21)
+      }
+    }
+    progressbar {
+      backgroundGradient = util.solidGradientString(headerBgColor)
+      border = util.border("solid", theme.borderColor, 1)
+      text = theme.headerText
+      textAlign = "center"
+      textPadding = util.padding(spacing / 2, 0)
+      barTextColor = text.color
+      barGradient = util.gradientString(headerGradientDetails)
+      barBorder = util.border("solid", "#000000", 0, 1, 0, 0)
+    }
+    statusproxy {
+      text = theme.text
+      border = util.border('solid', '#dddddd #bbbbbb #bbbbbb #dddddd', 1)
+      backgroundColor = '#ffffff'
+      opacity = 0.85
+    }
+    colorpalette {
+      itemSize = 16
+      itemPadding = util.padding(2)
+      backgroundColor = '#ffffff'
+      itemBorder = util.border('solid', '#e1e1e1', 1)
+      selectedBackgroundColor = '#e6e6e6'
+      selectedBorder = util.border('solid', '#8bb8f3', 1)
+    }
+  }
+}

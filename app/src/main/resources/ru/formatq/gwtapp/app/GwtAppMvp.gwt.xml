@@ -1,0 +1,28 @@
+<!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 2.0//EN"
+        "http://google-web-toolkit.googlecode.com/svn/releases/2.0/distro-source/core/src/gwt-module.dtd">
+<module rename-to="GwtAppMvp">
+
+    <inherits name="com.google.gwt.user.User"/>
+    <inherits name="com.sencha.gxt.ui.GXT"/>
+    <inherits name="com.sencha.gxt.data.Data"/>
+
+    <inherits name="ru.formatq.gwtapp.theme.Theme" />
+
+
+    <entry-point class="ru.formatq.gwtapp.app.client.GwtAppMvp"/>
+
+    <set-property name="gxt.user.agent" value="ie8, ie9, ie10, chrome, gecko1_8, gecko1_9"/>
+
+    <source path="client"/>
+
+    <stylesheet src="reset.css" />
+
+    <add-linker name="xsiframe"/>
+
+    <set-configuration-property name="devModeRedirectEnabled" value="true"/>
+
+    <!-- enable source maps -->
+
+    <set-property name="compiler.useSourceMaps" value="true"/>
+
+</module>
