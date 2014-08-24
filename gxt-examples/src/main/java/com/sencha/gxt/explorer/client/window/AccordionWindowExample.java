@@ -58,7 +58,7 @@ public class AccordionWindowExample implements IsWidget, EntryPoint {
       ContentPanel cp = new ContentPanel(appearance);
       cp.setAnimCollapse(false);
       cp.setHeadingText("Online Users");
-      if (!Theme.NEPTUNE.isActive()) {
+      if (!Theme.NEPTUNE.isActive() && !Theme.GREENY.isActive()) {
         cp.getHeader().addStyleName(ThemeStyles.get().style().borderTop());
       }
       con.add(cp);

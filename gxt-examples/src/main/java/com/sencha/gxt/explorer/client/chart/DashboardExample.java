@@ -200,7 +200,7 @@ public class DashboardExample implements IsWidget, EntryPoint {
       panel = new FramedPanel();
       panel.setLayoutData(new BoxLayoutData(new Margins(10)));
       panel.setHeadingText("Company Data");
-      panel.setPixelSize(870, Theme.NEPTUNE.isActive() ? 775 : 720);
+      panel.setPixelSize(870, Theme.NEPTUNE.isActive() || Theme.GREENY.isActive()  ? 775 : 720);
       panel.add(container);
 
       grid.getSelectionModel().select(0, false);

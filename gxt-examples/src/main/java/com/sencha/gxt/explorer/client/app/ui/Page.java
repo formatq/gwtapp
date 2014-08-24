@@ -115,7 +115,7 @@ public class Page extends TabPanel {
     west.getHeader().getElement().getStyle().setProperty("borderTop", "1px solid " + ThemeStyles.get().borderColor());
 
     BorderLayoutData westData = new BorderLayoutData(230);
-    westData.setMargins(Theme.NEPTUNE.isActive() ? new Margins(0) : new Margins(5, 0, 5, 5));
+    westData.setMargins(Theme.NEPTUNE.isActive() || Theme.GREENY.isActive()  ? new Margins(0) : new Margins(5, 0, 5, 5));
     westData.setCollapsible(true);
     westData.setSplit(true);
     westData.setCollapseMini(true);
@@ -181,7 +181,7 @@ public class Page extends TabPanel {
     center.getBody().getStyle().setOverflow(Overflow.VISIBLE);
 
     MarginData centerData = new MarginData();
-    centerData.setMargins(Theme.NEPTUNE.isActive() ? new Margins(0, 0, 0, 8) : new Margins(5));
+    centerData.setMargins(Theme.NEPTUNE.isActive() || Theme.GREENY.isActive()  ? new Margins(0, 0, 0, 8) : new Margins(5));
     center.setHeadingText("Source Code");
 
     center.add(f);

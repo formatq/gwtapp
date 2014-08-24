@@ -16,6 +16,17 @@
     background-color: #efefef;
   }
 
+} @elif gxt.theme greeny {
+    body {
+        font-family: helvetica, arial, verdana, sans-serif;
+    }
+    #demo-header {
+        background-color: #345E49;
+    }
+    .explorer-example-body {
+        background-color: #efefef;
+    }
+
 } @elif gxt.theme crisp {
   @sprite .explorer-example-body {
     gwt-image: 'squareBg';

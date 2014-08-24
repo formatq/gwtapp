@@ -14,3 +14,4 @@ To generate theme need delete all in \gwtapp\theme\src\main\java.
 Set generate profile and run mvn clean install in theme module.
 
 
+Also, added GXT examples project to test custom theme.
