@@ -11,6 +11,7 @@
     <modules>
         <module>theme</module>
         <module>app</module>
+        <module>gxt-examples</module>
     </modules>
 
     <properties>

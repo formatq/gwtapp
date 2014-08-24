@@ -23,6 +23,8 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="app" />
+        <module name="gxt-examples" />
+        <module name="gxtexamples" />
         <module name="theme" />
       </profile>
     </annotationProcessing>
