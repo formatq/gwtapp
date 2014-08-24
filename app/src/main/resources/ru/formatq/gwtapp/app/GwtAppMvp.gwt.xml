@@ -6,7 +6,7 @@
     <inherits name="com.sencha.gxt.ui.GXT"/>
     <inherits name="com.sencha.gxt.data.Data"/>
 
-    <inherits name="ru.formatq.gwtapp.theme.Theme" />
+    <inherits name="ru.formatq.gwtapp.theme.greeny.Theme" />
 
 
     <entry-point class="ru.formatq.gwtapp.app.client.GwtAppMvp"/>

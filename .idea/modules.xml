@@ -5,7 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/gwtapp.iml" filepath="$PROJECT_DIR$/gwtapp.iml" />
       <module fileurl="file://$PROJECT_DIR$/gxt-examples/gxt-examples.iml" filepath="$PROJECT_DIR$/gxt-examples/gxt-examples.iml" />
-      <module fileurl="file://$PROJECT_DIR$/theme/theme.iml" filepath="$PROJECT_DIR$/theme/theme.iml" />
+      <module fileurl="file://$PROJECT_DIR$/theme-greeny/theme-greeny.iml" filepath="$PROJECT_DIR$/theme-greeny/theme-greeny.iml" />
     </modules>
   </component>
 </project>

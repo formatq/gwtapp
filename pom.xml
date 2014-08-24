@@ -9,7 +9,7 @@
     <packaging>pom</packaging>
     <version>0.2</version>
     <modules>
-        <module>theme</module>
+        <module>theme-greeny</module>
         <module>app</module>
         <module>gxt-examples</module>
     </modules>

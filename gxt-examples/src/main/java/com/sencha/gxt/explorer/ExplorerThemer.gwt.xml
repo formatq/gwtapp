@@ -22,7 +22,7 @@
   <!-- Include both base GXT themes and set the app to check for url params to activate blue -->
   <inherits name="com.sencha.gxt.theme.blue.Blue" />
   <inherits name="com.sencha.gxt.theme.gray.Gray" />
-  <inherits name="ru.formatq.gwtapp.theme.Theme" />
+  <inherits name="ru.formatq.gwtapp.theme.greeny.Theme" />
 
   <inherits name="com.sencha.gxt.themebuilder.devmode.ThemerDevMode" />
 

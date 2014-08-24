@@ -75,6 +75,11 @@
             <artifactId>gxt-theme-neptune</artifactId>
             <version>${gxt.version}</version>
         </dependency>
+        <dependency>
+            <groupId>ru.formatq.gwtapp</groupId>
+            <artifactId>theme-greeny</artifactId>
+            <version>0.2</version>
+        </dependency>
 
         <dependency>
             <groupId>org.hsqldb</groupId>

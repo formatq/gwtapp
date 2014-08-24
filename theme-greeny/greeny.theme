@@ -1,0 +1,557 @@
+theme {
+  name = "greeny"
+  basePackage = "ru.formatq.gwtapp.theme.greeny"
+
+  headerText {
+    color = "#ffffff"
+    family = "helvetica, arial, verdana, sans-serif"
+    size = "13px"
+    weight = "bold"
+  }
+
+  panelBackgroundColor = "#ffffff"
+
+  borderColor = "#157F33"
+
+  details {
+    borderColor = theme.borderColor
+    backgroundColor = theme.panelBackgroundColor
+    disabledOpacity = 0.5
+    disabledTextColor = ""
+
+    button {
+      borderRadius = 4
+      border = util.border('solid', '#126D50', 1)
+      radiusMinusBorderWidth = util.radiusMinusBorderWidth(border, borderRadius)
+      padding = util.padding(1);
+      arrowColor = "#ffffff"
+
+      gradient = '#4B9C28 0%, #38922C 50%, #358A37 51%, #38922C'
+      overGradient = '#479237, #33863D 50%, #307F47 51%, #33863D'
+      pressedGradient = '#2A6D61, #276769 50%, #2A6D61 51%, #3F7B58'
+
+      font = util.fontStyle("helvetica,arial,verdana,sans-serif", '12px', '#FFFFFF', 'bold');
+      smallFontSize = 12
+      smallLineHeight = 18
+      mediumFontSize = 14
+      mediumLineHeight = 24
+      largeFontSize = 16
+      largeLineHeight = 32
+    }
+
+    buttonGroup {
+      borderRadius = 3
+      border = util.border('solid', '#DFF2EA', 3)
+      headerGradient = util.solidGradientString('#DFF2EA')
+
+      font = util.fontStyle("helvetica, arial, verdana, sans-serif", '13px', '#666666');
+      headerPadding = util.padding(2);
+
+      bodyPadding = util.padding(4);
+      bodyBackgroundColor = '#FFFFFF'
+    }
+
+    field {
+      borderColor = "#c0c0c0"
+      borderWidth = 1
+      borderStyle = "solid"
+
+      backgroundColor = "#ffffff"
+
+      focusBorderColor = "#38922C"
+
+      invalidBackgroundColor = "#ffffff"
+      invalidBorderColor = '#D94E37'
+      invalidBorderWidth = 1
+
+
+      padding = util.padding(2, 6, 1, 6)
+
+      height = 24
+
+      lineHeight = "18px"
+
+      text = util.fontStyle("helvetica,arial,verdana,sans-serif", '13px', '#000000');
+
+      emptyTextColor = "#808080"
+
+      slider {
+        trackHeight = 8
+        trackBorder = util.border('solid', "#d4d4d4", 1)
+        trackBackgroundColor = "#f5f5f5"
+        trackRadius = 4
+
+        thumbWidth = 15
+        thumbHeight = thumbWidth
+        thumbRadius = 8
+        thumbBorder = util.border("solid", "#777777", 1)
+        thumbBackgroundColor = "#f5f5f5"
+      }
+
+      sideLabel {
+        text = field.text
+        textAlign = 'left'
+        padding = util.padding(0, 0, 3)
+        labelPadding = util.padding(5, 5, 0, 0)
+        fieldPadding = util.padding(0)
+      }
+      topLabel {
+        text = field.text
+        textAlign = 'left'
+        padding = util.padding(0, 0, 5)
+        labelPadding = util.padding(6, 0, 0)
+        fieldPadding = util.padding(0)
+      }
+    }
+
+    datePicker {
+      border = util.border("solid", "#e1e1e1", 1)
+      backgroundColor = '#ffffff'
+
+      headerPadding = util.padding(8, 6)
+      headerBackgroundColor = "#f5f5f5"
+      headerText = util.fontStyle("helvetica,arial,verdana,sans-serif", '12px', '#38922C', 'bold')
+      headerTextPadding = util.padding(0, 5)
+
+      dayOfWeekBackgroundColor = '#ffffff'
+      dayOfWeekText = util.fontStyle('helvetica,arial,verdana,sans-serif', '13px', '#000000', 'bold')
+      dayOfWeekLineHeight = '24px'
+      dayOfWeekPadding = util.padding(0, 9, 0, 0)
+
+      dayBorder = util.border('solid', '#ffffff', 1)
+      dayText = util.fontStyle('helvetica,arial,verdana,sans-serif', '13px', '#000000')
+      dayLineHeight = '23px'
+      dayPadding = util.padding(0, 3, 0, 0)
+
+      dayDisabledBackgroundColor = '#eeeeee'
+      dayDisabledText = util.extend(dayText, {
+        color = '#808080'
+      })
+
+      dayNextBackgroundColor = '#ffffff'
+      dayNextText = util.extend(dayText, {
+        color = '#bfbfbf'
+      })
+
+      dayPreviousBackgroundColor = '#ffffff'
+      dayPreviousText = dayNextText
+
+      itemOverColor = "#000000"
+      itemOverBackgroundColor = "#EAFAF3"
+
+      itemSelectedBorder = util.border('solid', '#38922C', 1)
+      itemSelectedBackgroundColor = '#D6F6E8'
+      itemSelectedText = util.extend(dayText, {
+        weight = 'bold'
+      })
+
+      todayBorder = util.border('solid', '#8b0000', 1)
+
+      footerPadding = util.padding(3, 0)
+      footerBackgroundColor = '#f5f5f5'
+
+      buttonMargin = util.margin(0, 3, 0, 2)
+
+      width = "212px"
+    }
+
+    panel {
+
+      font = util.extend(headerText, {
+        family = 'arial,helvetica,verdana,sans-serif'
+      })
+
+      border = util.border('none')
+
+      frameWidth = 0
+      frameHeight = 0
+
+      headerPadding = util.padding(10);
+      padding = util.padding(0)
+
+      backgroundColor = panelBackgroundColor
+      headerBackgroundColor = "#157F33"
+
+      headerGradient = util.solidGradientString('#157F33')
+    }
+
+    framedPanel = util.extend(panel, {
+      borderRadius = 4
+      border = util.border('solid', theme.borderColor, 5)
+
+      headerPadding = util.padding(util.abs(panel.headerPadding.top - borderRadius), panel.headerPadding.right, panel.headerPadding.bottom)
+      radiusMinusBorderWidth = util.radiusMinusBorderWidth(border, borderRadius)
+    })
+    
+    window = util.extend(framedPanel, {
+      border = util.border('solid', '#329129', 5)
+      backgroundColor = "#ffffff"
+      headerGradient = util.solidGradientString("#329129")
+    })
+
+    messagebox {
+      text = util.fontStyle('helvetica,arial,verdana,sans-serif', '13px')
+      messagePadding = util.padding(10, 10, 5)
+      bodyPadding = util.padding(5, 10, 10)
+      iconPadding = util.padding(10)
+    }
+
+    borderLayout {
+      panelBackgroundColor = "#38922C"
+      collapsePanelBorder = util.border('solid', theme.borderColor, 1)
+    }
+    splitbar {
+      dragColor = "#B4B4B4"
+      handleOpacity = 0.5
+      handleWidth = 8
+      handleHeight = 48
+    }
+    
+    accordionLayout = util.extend(panel, {
+      headerGradient = util.solidGradientString("#DFF2EA")
+      headerBackgroundColor = "#DFF2EA"
+      headerPadding = util.padding(8, 10)
+      font = util.extend(headerText, {
+        color = '#666666'
+      })
+      border = util.border('solid', '#ffffff', 0, 0, 1)
+    })
+
+    fieldset {
+      text = util.fontStyle('helvetica,arial,verdana,sans-serif', '13px')
+      border = util.border('solid', '#B5C8B8', 1)
+    }
+
+    toolbar {
+      gradient = util.solidGradientString("#ffffff")
+      border = util.border('none')
+      padding = util.padding(3)
+
+      buttonOverride = util.extend(theme.details.button, {
+        border = util.border('solid', '#cecece', 1)
+        arrowColor = "#666666"
+
+        gradient = '#F6F6F6 0%, #F5F5F5 50%, #E8E8E8 51%, #F5F5F5 100%'
+        overGradient = '#EDEDED 0%, #EBEBEB 50%, #DFDFDF 51%, #EBEBEB 100%'
+        pressedGradient = '#E1E1E1 0%, #D5D5D5 50%, #E1E1E1 51%, #E4E4E4 100%'
+
+        font = util.fontStyle("helvetica,arial,verdana,sans-serif", '12px', '#666666', 'bold');
+      })
+
+      labelItem {
+        text = field.text
+        lineHeight = '17px'
+        padding = util.padding(2, 2, 0)
+      }
+
+    }
+    status {
+      text = util.fontStyle('helvetica,arial,verdana,sans-serif', '12px', '#000000')
+      lineHeight = '16px'
+      padding = util.padding(0, 5)
+      border = util.border('solid', '#cccccc #d9d9d9 #d9d9d9', 1)
+    }
+
+    tools {
+      primaryColor = util.mixColors("#ffffff", "#157F33", 0.5)
+      primaryOverColor = util.mixColors("#ffffff", "#157F33", 0.3)
+      primaryClickColor = util.mixColors("#ffffff", "#157F33", 0.25)
+      warningColor = "#D94E37"
+      allowColor = "#C6E38A"
+
+      tabs {
+        tabCloseOver = "#ffffff"
+      }
+    }
+
+    tabs {
+      borderRadius = 3
+      borderColor = "#037E30"
+      bodyBackgroundColor = "#ffffff"
+      gradient = util.solidGradientString("#ADEDD2")
+      inactiveGradient = util.solidGradientString("#4B9C28")
+      hoverGradient = util.solidGradientString("#5FA724")
+      lastStopColor = "#ADEDD2"
+      inactiveLastStopColor = "#4B9C28"
+
+      tabItemBorderLeft = "none"
+      tabItemBorderTop = "none"
+      tabItemBorderRight = "none"
+/*1*/
+      headingColor = "#1C943B"
+
+      tabStripGradient = util.solidGradientString('#037E30')
+
+      headingText = util.extend(theme.headerText, {
+        color = "#ffffff"
+      })
+      hoverHeadingText = headingText
+
+      activeHeadingText = util.extend(headingText, {
+        color = "#027D31"
+      })
+
+      iconWidth = 16
+      closeIconWidth = 11
+
+      tabHeight = 31
+      tabSpacing = 1
+      padding = util.padding(10)
+
+      paddingWithIcon = util.padding(padding.left + iconWidth/2)
+      iconLeftOffset = 6
+      iconTopOffset = 5
+
+      paddingWithClosable = util.padding(padding.right + closeIconWidth - 2)
+
+      scrollerBackgroundColor = "#007C2E"
+      scrollerWidth = 18
+      
+      tabStripPadding = util.padding(0)
+      tabBarBorder = "none"
+      tabBarBottomHeight = 4
+      tabStripBottomBorder = "none"
+      tabBodyBorder = "none"
+      tabTextPadding = util.padding(10, 0)
+    }
+
+    tree {
+      dragOverBackgroundColor = '#E2F8EF'
+
+      dropBackgroundColor = '#E2F8EF'
+
+      iconMargin = util.margin(4, 3, 0, 2)
+
+      itemHeight = '25px'
+
+      nodePadding = util.padding(0, 6, 0, 3)
+
+      overBackgroundColor = '#E2F8EF'
+
+      selectedBackgroundColor = '#C1F1DD'
+
+      text = util.fontStyle('helvetica,arial,verdana,sans-serif', '13px', '#000000')
+    }
+
+    info {
+      backgroundColor = "#ffffff"
+      borderRadius = 8
+      opacity = 1.0
+      border = util.border('solid', '#cccccc', 2)
+      radiusMinusBorderWidth = util.radiusMinusBorderWidth(border, borderRadius)
+      headerPadding = util.padding(0,0,8,0)
+      headerText = util.fontStyle("Tahoma, Arial, Verdana, sans-serif", '15px', '#555555', 'bold');
+      messagePadding = util.padding(0)
+      messageText = util.fontStyle("Tahoma, Arial, Verdana, sans-serif", '14px', '#555555');
+      margin = util.margin(2,0,0,0)
+      padding = util.padding(2,7)
+    }
+    tip {
+      backgroundColor = "#EAFAF3"
+      borderRadius = 3
+      opacity = 1
+      border = util.border('solid', '#e1e1e1', 1)
+      radiusMinusBorderWidth = util.radiusMinusBorderWidth(border, borderRadius)
+      headerPadding = util.padding(0)
+      headerText = util.fontStyle("Tahoma, Arial, Verdana, sans-serif", '12px', '#000000', 'bold');
+      messagePadding = util.padding(0,0,4)
+      messageText = util.fontStyle("Tahoma, Arial, Verdana, sans-serif", '12px');
+      margin = util.margin(0)
+      padding = util.padding(3)
+    }
+    errortip = tip
+
+    grid {
+      columnHeader {
+        borderWidth = 1
+        borderColor = '#c0c0c0'
+        borderStyle = 'solid'
+        gradient = '#f5f5f5 0%, #f5f5f5 100%'
+        overGradient = '#EEFBF6 0%, #EEFBF6 100%'
+
+        text = util.fontStyle('helvetica,arial,verdana,sans-serif', '13px', '#666666', 'bold')
+        padding = util.padding(7, 10)
+        lineHeight = "15px"
+
+        menuButtonWidth = 18
+
+        menuGradient = gradient
+        menuBorder = util.border('solid', '#c0c0c0', 0,0,0,1)
+        menuHoverGradient = overGradient
+        menuHoverBorder = menuBorder
+        menuActiveGradient = "#DFF2EA 0%, #DFF2EA 100%"
+        menuActiveBorder = menuBorder
+      }
+
+      cellPadding = util.padding(5,10,4)
+      cellText = util.fontStyle('helvetica,arial,verdana,sans-serif', '13px', '#000000')
+      cellLineHeight = "15px"
+      cellVBorderColor = '#ededed'
+      cellHBorderColor = '#ededed'
+      cellBorderWidth = 1
+      cellBackgroundColor = '#ffffff'
+      cellAltBackgroundColor = '#fafafa'
+
+      cellOverVBorderColor = '#ededed'
+      cellOverVBorderStyle = 'solid'
+      cellOverHBorderColor = '#E2F8EF'
+      cellOverHBorderStyle = 'solid'
+
+      cellOverBackgroundColor = '#E2F8EF'
+
+      cellSelectedVBorderColor = '#ededed'
+      cellSelectedVBorderStyle = 'solid'
+      cellSelectedHBorderColor = '#E2F8EF'
+      cellSelectedHBorderStyle = 'solid'
+
+      cellSelectedBackgroundColor = '#C1F1DD'
+
+      specialColumnGradient = ""
+      specialColumnGradientSelected = ""
+
+      group {
+        backgroundColor = '#f5f5f5'
+        border = util.border('solid', '#c0c0c0', 0, 0, 1)
+        text = columnHeader.text
+        padding = util.padding(8, 4)
+        iconSpacing = 11 + 6 // icon is 11px wide, plus 6px padding
+        summary {
+          text = util.extend(columnHeader.text, {
+            color = '#000000'
+          })
+          backgroundColor = '#ffffff'
+        }
+      }
+
+      rowNumberer {
+        text = util.fontStyle('helvetica,arial,verdana,sans-serif', '13px', '#000000')
+        padding = util.padding(5,3,4)
+      }
+
+      rowEditor {
+        backgroundColor = '#DFF2EA'
+        border = util.border('solid', '#e1e1e1', 1, 0);
+      }
+
+      footer {
+        text = util.fontStyle('helvetica,arial,verdana,sans-serif', '13px', '#000000', 'bold')
+        backgroundColor = '#ffffff'
+        cellBorder = util.border('solid', '#ededed', 1, 0, 0)
+      }
+    }
+    listview {
+      text = util.fontStyle('helvetica, arial, verdana, sans-serif','13px');
+      lineHeight = '22px'
+      backgroundColor = '#ffffff'
+      border = util.border('solid', '#e1e1e1', 1)
+
+      item {
+        padding = util.padding(0,6)
+        border = util.border('none')
+        gradient = util.solidGradientString('#ffffff')
+      }
+
+      overItem {
+        padding = util.padding(0,6)
+        border = util.border('none')
+        gradient = util.solidGradientString('#D6F6E8')
+      }
+
+      selectedItem {
+        padding = util.padding(0,6)
+        border = util.border('none')
+        gradient = util.solidGradientString('#C1F1DD')
+      }
+    }
+    menu {
+      border = util.border('solid', '#e1e1e1', 1)
+      padding = util.padding(0)
+      gradient = util.solidGradientString('#ffffff')
+      lastGradientColor = '#ffffff'
+
+      itemText = util.fontStyle('helvetica,arial,verdana,sans-serif', '13px')
+      itemLineHeight = '24px'
+      itemPadding = util.padding(0)
+
+      activeItemText = itemText
+      activeItemGradient = util.solidGradientString('#D6F6E8')
+      activeItemBorder = util.border('none')
+
+      bar {
+        border = util.border('none')
+        padding = util.padding(0)
+        gradient = menu.gradient
+
+
+        itemText = menu.itemText
+        itemLineHeight = menu.itemLineHeight
+        itemPadding = util.padding(1, 8)
+
+        hoverItemText = itemText
+        hoverItemGradient = menu.activeItemGradient
+        hoverItemBorder = util.border('none')
+
+        activeItemText = itemText
+        activeItemGradient = menu.activeItemGradient
+        activeItemBorder = util.border('none')
+      }
+
+      separator {
+        height = 1
+        margin = util.margin(2, 3)
+        color = '#e1e1e1'
+      }
+
+      header {
+        border = util.border('solid', '#99E8BB', 0, 0, 1)
+        backgroundColor = '#D6F2E3'
+
+        itemText = util.fontStyle('tahoma,arial,verdana,sans-serif', '10px', '#158B42', 'bold')
+        itemLineHeight = '13px'
+
+        itemPadding = util.padding(3)
+      }
+    }
+    mask {
+      opacity = 0.7
+      backgroundColor = '#ffffff'
+      box {
+        padding = util.padding(5)
+        borderColor = ''
+        borderStyle = 'none'
+        borderWidth = 0
+        borderRadius = 3
+        radiusMinusBorderWidth = util.max(0, borderRadius - borderWidth)
+        backgroundColor = '#e5e5e5'
+        text = util.fontStyle('helvetica, arial, verdana, sans-serif', '13px', '#666666')
+        textPadding = util.padding(21, 0, 0)
+        loadingImagePosition = 'center 0'
+      }
+    }
+    progressbar {
+      border = util.border('none')
+      text = util.fontStyle('helvetica, arial, verdana, sans-serif', '13px', '#666666', 'bold')
+      backgroundGradient = ''//transparent
+      textPadding = util.padding(3, 0)
+      textAlign = 'center'
+      barTextColor = text.color
+      barGradient = util.solidGradientString('#C1F1DD')
+      barBorder = util.border('none')
+    }
+
+    statusproxy {
+      text = util.fontStyle('helvetica,arial,verdana,sans-serif', '13px')
+      border = util.border('solid', '#dddddd #bbbbbb #bbbbbb #dddddd', 1)
+      backgroundColor = '#ffffff'
+      opacity = 0.85
+    }
+    colorpalette {
+      itemSize = 16
+      itemPadding = util.padding(2)
+      backgroundColor = '#ffffff'
+      itemBorder = util.border('solid', '#e1e1e1', 1)
+      selectedBackgroundColor = '#e6e6e6'
+      selectedBorder = util.border('solid', '#8BEAB8', 1)
+    }
+  }
+}

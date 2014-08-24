@@ -26,6 +26,7 @@
         <module name="gxt-examples" />
         <module name="gxtexamples" />
         <module name="theme" />
+        <module name="theme-greeny" />
       </profile>
     </annotationProcessing>
   </component>
