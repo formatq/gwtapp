@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="1194369786">
+  <component name="DataSourceManagerImpl" format="xml">
     <data-source source="LOCAL" name="openjpa" uuid="c35bd380-bfa3-4994-9a2a-0f121f8008d8">
       <driver-ref>hsqldb.remote</driver-ref>
       <jdbc-driver>org.hsqldb.jdbcDriver</jdbc-driver>
       <jdbc-url>jdbc:hsqldb:mem:exampleDataBase</jdbc-url>
-      <user-name>sa</user-name>
       <libraries>
         <library>
           <url>file://C:\.m2\org\hsqldb\hsqldb\2.0.0\hsqldb-2.0.0.jar</url>
@@ -14,4 +13,3 @@
     </data-source>
   </component>
 </project>
-

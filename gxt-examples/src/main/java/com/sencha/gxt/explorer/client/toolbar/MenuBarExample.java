@@ -123,6 +123,9 @@ public class MenuBarExample implements IsWidget, EntryPoint {
       r = new CheckMenuItem("Greeny Theme");
       r.setGroup("radios");
       radioMenu.add(r);
+      r = new CheckMenuItem("Zelen Theme");
+      r.setGroup("radios");
+      radioMenu.add(r);
       radios.setSubMenu(radioMenu);
 
       MenuItem date = new MenuItem("Choose a Date");

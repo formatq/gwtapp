@@ -12,6 +12,7 @@
         <module>theme-greeny</module>
         <module>app</module>
         <module>gxt-examples</module>
+        <module>zelen</module>
     </modules>
 
     <properties>

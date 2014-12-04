@@ -27,8 +27,8 @@
         <module name="gxtexamples" />
         <module name="theme" />
         <module name="theme-greeny" />
+        <module name="zelen" />
       </profile>
     </annotationProcessing>
   </component>
 </project>
-

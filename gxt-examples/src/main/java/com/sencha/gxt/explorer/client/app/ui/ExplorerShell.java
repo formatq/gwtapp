@@ -46,7 +46,7 @@ public class ExplorerShell implements IsWidget {
     private BorderLayoutContainer root = new BorderLayoutContainer();
 
     public enum Theme {
-        BLUE("Blue Theme"), GRAY("Gray Theme"), NEPTUNE("Neptune Theme"), GREENY("Greeny Theme");
+        BLUE("Blue Theme"), GRAY("Gray Theme"), NEPTUNE("Neptune Theme"), GREENY("Greeny Theme"), ZELEN("Zelen Theme");
 
         private final String value;
 
@@ -69,6 +69,8 @@ public class ExplorerShell implements IsWidget {
                     return theme.isNeptune();
                 case GREENY:
                     return theme.isGreeny();
+                case ZELEN:
+                    return theme.isZelen();
             }
             return false;
         }
@@ -92,6 +94,9 @@ public class ExplorerShell implements IsWidget {
 
         @PropertyValue(value = "greeny", warn = false)
         boolean isGreeny();
+
+        @PropertyValue(value = "zelen", warn = false)
+        boolean isZelen();
     }
 
     public interface Resources extends ClientBundle {
@@ -146,7 +151,7 @@ public class ExplorerShell implements IsWidget {
         combo.setEditable(false);
         combo.getElement().getStyle().setFloat(Float.RIGHT);
         combo.setWidth(125);
-        combo.setValue(Theme.GRAY.isActive() ? Theme.GRAY : Theme.BLUE.isActive() ? Theme.BLUE : Theme.NEPTUNE.isActive() ? Theme.NEPTUNE : Theme.GREENY);
+        combo.setValue(Theme.GRAY.isActive() ? Theme.GRAY : Theme.BLUE.isActive() ? Theme.BLUE : Theme.NEPTUNE.isActive() ? Theme.NEPTUNE : Theme.GREENY.isActive() ? Theme.GREENY : Theme.ZELEN);
         combo.addSelectionHandler(new SelectionHandler<Theme>() {
             @Override
             public void onSelection(SelectionEvent<Theme> event) {
@@ -162,6 +167,9 @@ public class ExplorerShell implements IsWidget {
                         break;
                     case GREENY:
                         Window.Location.assign(GWT.getHostPageBaseURL() + "index-greeny.html" + Window.Location.getHash());
+                        break;
+                    case ZELEN:
+                        Window.Location.assign(GWT.getHostPageBaseURL() + "index-zelen.html" + Window.Location.getHash());
                         break;
                     default:
                         assert false : "Unsupported theme enum";

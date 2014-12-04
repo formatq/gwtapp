@@ -82,6 +82,12 @@
         </dependency>
 
         <dependency>
+            <groupId>ru.formatq.gwtapp</groupId>
+            <artifactId>zelen</artifactId>
+            <version>0.2</version>
+        </dependency>
+
+        <dependency>
             <groupId>org.hsqldb</groupId>
             <artifactId>hsqldb</artifactId>
             <version>2.0.0</version>

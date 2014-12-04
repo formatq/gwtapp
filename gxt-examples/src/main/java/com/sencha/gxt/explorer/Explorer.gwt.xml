@@ -24,7 +24,8 @@
     <inherits name="com.sencha.gxt.theme.gray.Gray"/>
     <inherits name="com.sencha.gxt.theme.neptune.Theme"/>
     <inherits name="ru.formatq.gwtapp.theme.greeny.Theme"/>
-    <set-property name="gxt.theme" value="blue,gray,neptune,greeny"/>
+    <inherits name="ru.formatq.gxt.theme.zelen.Zelen"/>
+    <set-property name="gxt.theme" value="blue,gray,neptune,greeny, zelen"/>
     <property-provider name="gxt.theme"><![CDATA[
     if (window.location.pathname.indexOf('blue') != -1 || window.location.search.indexOf('blue') != -1) {
       return "blue";
@@ -35,6 +36,9 @@
     if (window.location.pathname.indexOf('greeny') != -1 || window.location.search.indexOf('greeny') != -1) {
       return "greeny";
     }
+    if (window.location.pathname.indexOf('zelen') != -1 || window.location.search.indexOf('zelen') != -1) {
+      return "zelen";
+    }
     return "neptune";
   ]]></property-provider>
 
@@ -42,6 +46,7 @@
         <any>
             <when-property-is name="gxt.theme" value="blue"/>
             <when-property-is name="gxt.theme" value="gray"/>
+            <when-property-is name="gxt.theme" value="zelen"/>
         </any>
     </set-property>
 
@@ -62,6 +67,10 @@
     <replace-with class='com.sencha.gxt.explorer.client.chart.GreenyThemedChartAppearance'>
         <when-type-is class='com.sencha.gxt.explorer.client.chart.ThemedChartExample.ThemedChartAppearance'/>
         <when-property-is name="gxt.theme" value="neptune"/>
+    </replace-with>
+    <replace-with class='com.sencha.gxt.explorer.client.chart.ZelenThemedChartAppearance'>
+        <when-type-is class='com.sencha.gxt.explorer.client.chart.ThemedChartExample.ThemedChartAppearance'/>
+        <when-property-is name="gxt.theme" value="zelen"/>
     </replace-with>
 
     <!-- Specify the paths for translatable code -->

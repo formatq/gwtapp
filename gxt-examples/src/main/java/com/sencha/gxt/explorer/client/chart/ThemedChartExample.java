@@ -57,7 +57,7 @@ import com.sencha.gxt.widget.core.client.event.SelectEvent.SelectHandler;
 import com.sencha.gxt.widget.core.client.toolbar.ToolBar;
 
 @Detail(name = "Themed Chart", icon = "bluechart", category = "Charts", classes = {
-    Data.class, BlueThemedChartAppearance.class, GrayThemedChartAppearance.class, NeptuneThemedChartAppearance.class, GreenyThemedChartAppearance.class})
+    Data.class, BlueThemedChartAppearance.class, GrayThemedChartAppearance.class, NeptuneThemedChartAppearance.class, GreenyThemedChartAppearance.class, ZelenThemedChartAppearance.class})
 public class ThemedChartExample implements IsWidget, EntryPoint {
 
   public interface ThemedChartAppearance {

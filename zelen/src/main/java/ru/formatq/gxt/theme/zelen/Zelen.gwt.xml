@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 2.5.0//EN"
+    "http://google-web-toolkit.googlecode.com/svn/tags/2.5.0/distro-source/core/src/gwt-module.dtd">
+<module>
+  <inherits name="com.sencha.gxt.theme.base.Base" />
+
+  <extend-property name="gxt.theme" values="zelen" />
+  <set-property name="gxt.theme" value="zelen" />
+
+  <replace-with class="ru.formatq.gxt.theme.zelen.client.ZelenThemeAppearance">
+    <when-type-is class="com.sencha.gxt.core.client.resources.ThemeStyles.ThemeAppearance" />
+    <when-property-is name="gxt.theme" value="zelen" />
+  </replace-with>
+
+  <!-- Buttons -->
+  <replace-with class="ru.formatq.gxt.theme.zelen.client.button.ZelenButtonGroupAppearance">
+    <when-type-is class="com.sencha.gxt.widget.core.client.button.ButtonGroup.ButtonGroupAppearance" />
+    <when-property-is name="gxt.theme" value="zelen" />
+  </replace-with>
+
+  <replace-with class="ru.formatq.gxt.theme.zelen.client.grid.ZelenGridAppearance">
+    <when-type-is class="com.sencha.gxt.widget.core.client.grid.GridView.GridAppearance" />
+    <when-property-is name="gxt.theme" value="zelen" />
+  </replace-with>
+
+  <replace-with class="ru.formatq.gxt.theme.zelen.client.toolbar.ZelenToolBarButtonAppearance">
+    <when-type-is class="com.sencha.gxt.widget.core.client.toolbar.ToolBarButton.ToolBarButtonAppearance" />
+    <when-property-is name="gxt.theme" value="zelen" />
+  </replace-with>
+
+  <replace-with class="ru.formatq.gxt.theme.zelen.client.progress.ZelenProgressBarAppearance">
+    <when-type-is class="com.sencha.gxt.cell.core.client.ProgressBarCell.ProgressBarAppearance" />
+    <when-property-is name="gxt.theme" value="zelen" />
+  </replace-with>
+
+  <replace-with class="ru.formatq.gxt.theme.zelen.client.panel.ZelenContentPanelAppearance">
+    <when-type-is class="com.sencha.gxt.widget.core.client.ContentPanel.ContentPanelAppearance" />
+    <when-property-is name="gxt.theme" value="zelen" />
+  </replace-with>
+
+  <replace-with class="ru.formatq.gxt.theme.zelen.client.window.ZelenWindowAppearance">
+    <when-type-is class="com.sencha.gxt.widget.core.client.Window.WindowAppearance" />
+    <when-property-is name="gxt.theme" value="zelen" />
+  </replace-with>
+
+  <replace-with class="ru.formatq.gxt.theme.zelen.client.panel.ZelenAccordionLayoutAppearance">
+    <when-type-is class="com.sencha.gxt.widget.core.client.container.AccordionLayoutContainer.AccordionLayoutAppearance" />
+    <when-property-is name="gxt.theme" value="zelen" />
+  </replace-with>
+
+  <!-- Menu Bar -->
+  <replace-with class="ru.formatq.gxt.theme.zelen.client.menu.ZelenMenuBarAppearance">
+    <when-type-is class="com.sencha.gxt.widget.core.client.menu.MenuBar.MenuBarAppearance" />
+    <when-property-is name="gxt.theme" value="zelen" />
+  </replace-with>
+
+  <replace-with class="ru.formatq.gxt.theme.zelen.client.menu.ZelenMenuBarItemAppearance">
+    <when-type-is class="com.sencha.gxt.widget.core.client.menu.MenuBarItem.MenuBarItemAppearance" />
+    <when-property-is name="gxt.theme" value="zelen" />
+  </replace-with>
+
+  <replace-with class="ru.formatq.gxt.theme.zelen.client.widget.ZelenDatePickerAppearance">
+    <when-type-is class="com.sencha.gxt.widget.core.client.DatePicker.DatePickerAppearance" />
+    <when-property-is name="gxt.theme" value="zelen" />
+  </replace-with>
+
+  <replace-with class="ru.formatq.gxt.theme.zelen.client.field.ZelenFieldSetAppearance">
+    <when-type-is class="com.sencha.gxt.widget.core.client.form.FieldSet.FieldSetAppearance" />
+    <when-property-is name="gxt.theme" value="zelen" />
+  </replace-with>
+
+  <replace-with class="ru.formatq.gxt.theme.zelen.client.tree.ZelenTreeAppearance">
+    <when-type-is class="com.sencha.gxt.widget.core.client.tree.Tree.TreeAppearance" />
+    <when-property-is name="gxt.theme" value="zelen" />
+  </replace-with>
+
+  <replace-with class="ru.formatq.gxt.theme.zelen.client.panel.ZelenContentPanelAppearance">
+    <when-type-is class="com.sencha.gxt.widget.core.client.ContentPanel.ContentPanelAppearance" />
+    <when-property-is name="gxt.theme" value="zelen" />
+  </replace-with>
+
+  <replace-with class="ru.formatq.gxt.theme.zelen.client.panel.ZelenFramedPanelAppearance">
+    <when-type-is class="com.sencha.gxt.widget.core.client.FramedPanel.FramedPanelAppearance" />
+    <when-property-is name="gxt.theme" value="zelen" />
+  </replace-with>
+
+  <replace-with class="ru.formatq.gxt.theme.zelen.client.panel.ZelenPanelHeaderAppearance">
+    <when-type-is class="com.sencha.gxt.widget.core.client.ContentPanel.PanelHeaderAppearance" />
+    <when-property-is name="gxt.theme" value="zelen" />
+  </replace-with>
+
+  <replace-with class="ru.formatq.gxt.theme.zelen.client.toolbar.ZelenToolBarAppearance">
+    <when-type-is class="com.sencha.gxt.widget.core.client.toolbar.ToolBar.ToolBarAppearance" />
+    <when-property-is name="gxt.theme" value="zelen" />
+  </replace-with>
+
+  <replace-with class="ru.formatq.gxt.theme.zelen.client.toolbar.ZelenSeparatorToolItemAppearance">
+    <when-type-is class="com.sencha.gxt.widget.core.client.toolbar.SeparatorToolItem.SeparatorToolItemAppearance" />
+    <when-property-is name="gxt.theme" value="zelen" />
+  </replace-with>
+
+  <replace-with class="ru.formatq.gxt.theme.zelen.client.tools.ZelenTools">
+    <when-type-is class="com.sencha.gxt.widget.core.client.button.Tools" />
+    <when-property-is name="gxt.theme" value="zelen" />
+  </replace-with>
+
+  <!-- Menu -->
+  <replace-with class="ru.formatq.gxt.theme.zelen.client.menu.ZelenMenuAppearance">
+    <when-type-is class="com.sencha.gxt.widget.core.client.menu.Menu.MenuAppearance" />
+    <when-property-is name="gxt.theme" value="zelen" />
+  </replace-with>
+
+  <replace-with class="ru.formatq.gxt.theme.zelen.client.menu.ZelenItemAppearance">
+    <when-type-is class="com.sencha.gxt.widget.core.client.menu.Item.ItemAppearance" />
+    <when-property-is name="gxt.theme" value="zelen" />
+  </replace-with>
+
+  <replace-with class="ru.formatq.gxt.theme.zelen.client.menu.ZelenMenuItemAppearance">
+    <when-type-is class="com.sencha.gxt.widget.core.client.menu.MenuItem.MenuItemAppearance" />
+    <when-property-is name="gxt.theme" value="zelen" />
+  </replace-with>
+
+  <replace-with class="ru.formatq.gxt.theme.zelen.client.menu.ZelenHeaderMenuItemAppearance">
+    <when-type-is class="com.sencha.gxt.widget.core.client.menu.HeaderMenuItem.HeaderMenuItemAppearance" />
+    <when-property-is name="gxt.theme" value="zelen" />
+  </replace-with>
+
+  <replace-with class="ru.formatq.gxt.theme.zelen.client.menu.ZelenSeparatorMenuItemAppearance">
+    <when-type-is class="com.sencha.gxt.widget.core.client.menu.SeparatorMenuItem.SeparatorMenuItemAppearance" />
+    <when-property-is name="gxt.theme" value="zelen" />
+  </replace-with>
+
+  <replace-with class="ru.formatq.gxt.theme.zelen.client.menu.ZelenCheckMenuItemAppearance">
+    <when-type-is class="com.sencha.gxt.widget.core.client.menu.CheckMenuItem.CheckMenuItemAppearance" />
+    <when-property-is name="gxt.theme" value="zelen" />
+  </replace-with>
+
+  <!-- Status -->
+  <replace-with class="ru.formatq.gxt.theme.zelen.client.status.ZelenBoxStatusAppearance">
+    <when-type-is class="com.sencha.gxt.widget.core.client.Status.BoxStatusAppearance" />
+    <when-property-is name="gxt.theme" value="zelen" />
+  </replace-with>
+
+  <!-- Tab Panel -->
+  <replace-with class="ru.formatq.gxt.theme.zelen.client.tabs.ZelenTabPanelAppearance">
+    <when-type-is class="com.sencha.gxt.widget.core.client.TabPanel.TabPanelAppearance" />
+    <when-property-is name="gxt.theme" value="zelen" />
+  </replace-with>
+
+  <replace-with class="ru.formatq.gxt.theme.zelen.client.tabs.ZelenTabPanelBottomAppearance">
+    <when-type-is class="com.sencha.gxt.widget.core.client.TabPanel.TabPanelBottomAppearance" />
+    <when-property-is name="gxt.theme" value="zelen" />
+  </replace-with>
+
+  <replace-with class="ru.formatq.gxt.theme.zelen.client.tabs.ZelenPlainTabPanelAppearance">
+    <when-type-is class="com.sencha.gxt.widget.core.client.PlainTabPanel.PlainTabPanelAppearance" />
+    <when-property-is name="gxt.theme" value="zelen" />
+  </replace-with>
+
+  <replace-with class="ru.formatq.gxt.theme.zelen.client.tabs.ZelenPlainTabPanelBottomAppearance">
+    <when-type-is class="com.sencha.gxt.widget.core.client.PlainTabPanel.PlainTabPanelBottomAppearance" />
+    <when-property-is name="gxt.theme" value="zelen" />
+  </replace-with>
+
+  <!-- Color Palette -->
+  <replace-with class="ru.formatq.gxt.theme.zelen.client.colorpalette.ZelenColorPaletteAppearance">
+    <when-type-is class="com.sencha.gxt.widget.core.client.ColorPaletteCell.ColorPaletteAppearance" />
+    <when-property-is name="gxt.theme" value="zelen" />
+  </replace-with>
+
+  <!-- Slider -->
+  <replace-with class="ru.formatq.gxt.theme.zelen.client.slider.ZelenSliderHorizontalAppearance">
+    <any>
+      <when-type-is class="com.sencha.gxt.cell.core.client.SliderCell.SliderAppearance" />
+      <when-type-is class="com.sencha.gxt.cell.core.client.SliderCell.HorizontalSliderAppearance" />
+    </any>
+    <when-property-is name="gxt.theme" value="zelen" />
+  </replace-with>
+  <replace-with class="ru.formatq.gxt.theme.zelen.client.slider.ZelenSliderVerticalAppearance">
+    <when-type-is class="com.sencha.gxt.cell.core.client.SliderCell.VerticalSliderAppearance" />
+    <when-property-is name="gxt.theme" value="zelen" />
+  </replace-with>
+
+  <replace-with class="ru.formatq.gxt.theme.zelen.client.container.ZelenBorderLayoutAppearance">
+    <when-type-is class="com.sencha.gxt.widget.core.client.container.BorderLayoutContainer.BorderLayoutAppearance" />
+    <when-property-is name="gxt.theme" value="zelen" />
+  </replace-with>
+
+  <!-- Resizable -->
+  <replace-with class="ru.formatq.gxt.theme.zelen.client.resizable.ZelenResizableAppearance">
+    <when-type-is class="com.sencha.gxt.widget.core.client.Resizable.ResizableAppearance" />
+    <when-property-is name="gxt.theme" value="zelen" />
+  </replace-with>
+
+  <!-- Status proxy -->
+  <replace-with class="ru.formatq.gxt.theme.zelen.client.statusproxy.ZelenStatusProxyAppearance">
+    <when-type-is class="com.sencha.gxt.dnd.core.client.StatusProxy.StatusProxyAppearance" />
+    <when-property-is name="gxt.theme" value="zelen" />
+  </replace-with>
+
+  <!-- Paging tool bar -->
+  <replace-with class="ru.formatq.gxt.theme.zelen.client.toolbar.ZelenPagingToolBarAppearance">
+    <when-type-is class="com.sencha.gxt.widget.core.client.toolbar.PagingToolBar.PagingToolBarAppearance" />
+    <when-property-is name="gxt.theme" value="zelen" />
+  </replace-with>
+
+</module>
