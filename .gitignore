@@ -1,0 +1,32 @@
+# IntelliJ IDEA
+*.iml
+*.ipr
+*.iws
+*.ids
+.idea
+
+# Eclipse
+.classpath
+.project
+.settings
+.externalToolBuilders
+.metadata
+
+# Maven
+maven-eclipse.xml
+.m2
+.repository
+m2
+
+# Logs
+*.log
+*.tlog
+logs
+
+# Build
+target
+
+# maven shade plugin
+dependency-reduced-pom.xml
+
+~$*.*
