@@ -20,7 +20,7 @@ public class ZelenMenuItemAppearance extends MenuItemBaseAppearance {
 
     @Override
     @Source({"com/sencha/gxt/theme/base/client/menu/Item.css",
-            "com/sencha/gxt/theme/zelen/client/menu/ZelenItem.css",
+            "ru/formatq/gxt/theme/zelen/client/menu/ZelenItem.css",
             "com/sencha/gxt/theme/base/client/menu/MenuItem.css",
             "ZelenMenuItem.css"})
     ZelenMenuItemStyle style();

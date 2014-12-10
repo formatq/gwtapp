@@ -17,7 +17,7 @@ public class ZelenMessageBoxAppearance extends ZelenWindowAppearance {
 
     @Source({
         "com/sencha/gxt/theme/base/client/panel/ContentPanel.css",
-        "com/sencha/gxt/theme/zelen/client/window/ZelenWindow.css"})
+        "ru/formatq/gxt/theme/zelen/client/window/ZelenWindow.css"})
     @Override
     ZelenWindowStyle style();
 

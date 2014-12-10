@@ -10,6 +10,22 @@
 }
 
 .hover,.selected {
+  border-color: #aaaaaa;
+  background-color: #f4f2eb;
+}
+
+.wrapper {
+  border-color: #969696;
+}
+
+
+/*
+
+.anchor {
+  border-color: #FFFFFF;
+}
+
+.hover,.selected {
   border-color: #B1B1B1;
   background-color: #eaeaea;
 }
@@ -17,3 +33,5 @@
 .wrapper {
   border-color: #A7A7A7;
 }
+
+*/

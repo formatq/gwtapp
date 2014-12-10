@@ -18,7 +18,7 @@ public class ZelenSeparatorMenuItemAppearance extends SeparatorMenuItemBaseAppea
 
     @Override
     @Source({"com/sencha/gxt/theme/base/client/menu/Item.css",
-            "com/sencha/gxt/theme/zelen/client/menu/ZelenItem.css",
+            "ru/formatq/gxt/theme/zelen/client/menu/ZelenItem.css",
             "com/sencha/gxt/theme/base/client/menu/SeparatorMenuItem.css",
             "ZelenSeparatorMenuItem.css"})
     ZelenSeparatorMenuItemStyle style();

@@ -18,7 +18,7 @@ public class ZelenItemAppearance extends ItemBaseAppearance {
 
     @Override
     @Source({"com/sencha/gxt/theme/base/client/menu/Item.css",
-            "com/sencha/gxt/theme/zelen/client/menu/ZelenItem.css",
+            "ru/formatq/gxt/theme/zelen/client/menu/ZelenItem.css",
             "ZelenItem.css"})
     ZelenItemStyle style();
 

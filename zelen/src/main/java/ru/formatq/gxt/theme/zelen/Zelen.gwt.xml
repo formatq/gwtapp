@@ -18,6 +18,14 @@
     <when-property-is name="gxt.theme" value="zelen" />
   </replace-with>
 
+  <replace-with class="ru.formatq.gxt.theme.zelen.client.button.ZelenButtonCellAppearance">
+    <when-type-is class="com.sencha.gxt.cell.core.client.ButtonCell.ButtonCellAppearance" />
+  </replace-with>
+
+  <replace-with class="ru.formatq.gxt.theme.zelen.client.button.ZelenIconButtonAppearance">
+    <when-type-is class="com.sencha.gxt.widget.core.client.button.IconButton.IconButtonAppearance" />
+  </replace-with>
+
   <replace-with class="ru.formatq.gxt.theme.zelen.client.grid.ZelenGridAppearance">
     <when-type-is class="com.sencha.gxt.widget.core.client.grid.GridView.GridAppearance" />
     <when-property-is name="gxt.theme" value="zelen" />
